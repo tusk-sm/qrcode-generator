@@ -45,7 +45,7 @@ async def handle(request):
         text = '''Hello, world! This is qr-code generator.
 
 It works like this:
-https://qr-code-generator-t.herokuapp.com/?data=https://qr-code-generator-t.herokuapp.com/
+{request.url}?data={request.url}
 Рut the string in the "data" query parameter.
 If you need to encode a string, you can use the "charset" query parameter
         '''
